@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "chromedriver": "^133.0.1",
+    "selenium-webdriver": "^4.28.1"
+  }
+  
+}
+
+{
+  "author": "Huynh Minh Hai"
+};
