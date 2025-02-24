@@ -45,28 +45,52 @@
         <div class="form-container sign-up-container">
             <form class="form-content">
                 <h1>Create Account</h1>
+
+                <!-- Social media links for sign up -->
                 <div class="social-container">
-                    <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
-                    <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="social">
+                        <i class="fab fa-google-plus-g"></i>
+                    </a>
+                    <a href="#" class="social">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
                 </div>
+
+                <!-- Alternative sign up method using email -->
                 <span>or use your email for registration</span>
+
+                <!-- Form fields for sign up -->
                 <input id="nameSignup" type="text" placeholder="Full Name" />
                 <input id="emailSignup" type="email" placeholder="Email" />
                 <input id="passwordSignup" type="password" placeholder="Password" />
+
+                <!-- Error message display -->
                 <p class="errorMsg">Error</p>
+
+                <!-- Sign up button -->
                 <button id="btn_signup">Sign Up</button>
             </form>
         </div>
+
         <div class="form-container sign-in-container">
             <form class="form-content">
                 <h1>Sign in</h1>
                 <div class="social-container">
-                    <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
-                    <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social" aria-label="Sign in with Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="social" aria-label="Sign in with Google">
+                        <i class="fab fa-google-plus-g"></i>
+                    </a>
+                    <a href="#" class="social" aria-label="Sign in with LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
                 </div>
                 <span>or use your account</span>
+                
                 <input id="emailSignin" type="email" placeholder="Email" />
                 <input id="passwordSignin" type="password" placeholder="Password" />
                 <p class="errorMsg">Error</p>
