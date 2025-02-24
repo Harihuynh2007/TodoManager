@@ -62,6 +62,18 @@ btnLogout.addEventListener("click", function () {
     );
 });
 
+function searchTasks() {
+    let input = document.getElementById('searchbar').value.toLowerCase();
+    let tasks = document.querySelectorAll('#task-list .task');
+    tasks.forEach(task => {
+        task.style.display = task.textContent.toLowerCase().includes(input) ? '' : 'none';
+    });
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById("currenttime").textContent = new Date().toLocaleTimeString();
+});
+
 
 function TaskTodo(status, title, desc, category, keyid, duedate, priority) {
     this.status = status;
@@ -288,5 +300,7 @@ function renderChart() {
 
 
 }
+
+
 
 

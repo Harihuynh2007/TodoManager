@@ -150,3 +150,18 @@ window.onload = function() {
     }, 800);
 
 };
+
+document.getElementById("loginForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+    const email = document.getElementById("emailSignin").value;
+    const password = document.getElementById("passwordSignin").value;
+    const errorMsg = document.getElementById("errorMsg");
+    
+    if (email === "admin@example.com" && password === "password123") {
+        alert("Login successful!");
+        window.location.href = "dashboard.html";
+    } else {
+        errorMsg.textContent = "Invalid email or password. Please try again.";
+        errorMsg.style.color = "red";
+    }
+});

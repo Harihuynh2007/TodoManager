@@ -73,11 +73,12 @@
     <div class="main-container">
         <div class="main-content">
             <div class="dashboard-header">
+                <span id="currenttime">Current Time</span>
                 <div class="dashboard-header-search">
                     <i class="fas fa-search"></i>
-                    <input type="text" placeholder="Search" id="searchbar">
+                    <input type="text" placeholder="Search..." id="searchbar" onkeyup="searchTasks()">
                 </div>
-                <span id="currenttime">Current Time</span>
+                
                 <div class="darklightmode">
 
                     <div class="darklightmode-item" id="lightmode">
@@ -93,7 +94,10 @@
                 </div>
 
             </div>
-
+            <div class="dashboard-content">
+                <h2>Task Overview</h2>
+                <div id="task-list">Loading tasks...</div>
+            </div>
             <div class="dashboard-task">
                 <div class="dashboard-task-header">
                     <div class="dashboard-task-lasttask-number">
