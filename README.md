@@ -1,6 +1,22 @@
 ## Author
 - Huynh Minh Hai
 
+## Running Tests
+
+### Prerequisites
+- Python 3.10+
+- Selenium WebDriver (Edge)
+- Edge browser installed
+- `pip install -r requirements.txt` (nếu có)
+
+### Steps to Run Tests
+1. Khởi động máy chủ localhost (nếu cần).
+2. Mở terminal/cmd và di chuyển đến thư mục chứa dự án.
+3. Chạy lệnh sau để thực thi test tự động:
+   ```sh
+   python -m unittest tests/test_add_task.py
+
+
 ## Feature
 - [x] Đăng nhập/Đăng ký
 - [x] Thêm/Xoá/Sửa công việc
