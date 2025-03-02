@@ -13,6 +13,10 @@ class TestAddTask(unittest.TestCase):
         cls.driver = webdriver.Edge()
         cls.driver.maximize_window()
 
+    # XOA COOKIE
+    def tearDown(self):
+        self.driver.delete_all_cookies()
+        
     def test_add_task(self):
         driver = self.driver
         driver.get("http://127.0.0.1:5500/login.html")
